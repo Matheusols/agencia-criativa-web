@@ -1,0 +1,11 @@
+@mixin tamanho-texto($tamanho: 1rem){
+    font-size: $tamanho;
+}
+
+@mixin margem-padrao($margem: 1rem){
+    margin-top: $margem;
+}
+
+@mixin borda-padrao($borda: 4px){
+    border-radius: $borda;
+}

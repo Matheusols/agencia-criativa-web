@@ -1,0 +1,17 @@
+@use 'variaveis';
+@use 'mixins';
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/01.jpg') no-repeat center center/cover;
+    color: variaveis.$cor-texto-primaria;
+    text-align: center;
+    padding: 8vh 2rem;
+
+    &__titulo {
+        @include mixins.tamanho-texto(2rem);
+    }
+
+    &__descricao {
+        @include mixins.tamanho-texto(1.2rem);
+    }
+}

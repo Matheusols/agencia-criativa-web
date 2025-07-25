@@ -1,0 +1,25 @@
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: variaveis.$fonte-padrao;
+    line-height: 1.6;
+    color: variaveis.$cor-texto-secundaria;
+    background-color: variaveis.$cor-primaria;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho__lista {
+        gap: 0.5rem;
+    }
+}
